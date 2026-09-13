@@ -1,13 +1,10 @@
 * {
-    background-color: #deddda;
     font-family: Geist Mono, monospaced;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+html {
+    background: linear-gradient(145deg, #deddda, #c7c5c1);
+    min-height: 100%;
 }
 
 .workspace {
@@ -41,12 +38,14 @@ body {
 .calc {
     border-radius: 70px;
     background: #deddda;
-    box-shadow:  8px 8px 16px #c3c2c0,
+    box-shadow:  8px 8px 16px #afaeac,
                 -8px -8px 16px #f9f8f4;
     padding: 40px;
     flex-basis: 25em;
     min-width: 25em;
     max-width: 25em;
+
+    flex-grow: 2;
 }
 
 .history, .empty {
@@ -60,6 +59,10 @@ body {
 @media (max-width: 45em) {
     .history, .empty {
         display: none;
+    }
+    .calc {
+        min-width: 20px;
+        max-width: 25em;
     }
 }
 
@@ -75,12 +78,12 @@ body {
 }
 
 #display {
-    font-size: 70px;
+    font-size: 60px;
     border-radius: 60px;
     background: #494949;
     box-shadow: inset 8px 8px 16px #373737,
                 inset -8px -8px 16px #5b5b5b;
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin: 20px 10px;
     color: #f7f7f7;
     text-align: right;
