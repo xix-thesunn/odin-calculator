@@ -8,3 +8,30 @@ for (button of buttons) {
   }
 });
 }
+
+for (button of buttons) {
+  if (button.classList.contains('numbers')) {
+    button.addEventListener('click', (e) => testAlert(e));
+  }
+
+  if (button.classList.contains('operator')) {
+    button.addEventListener('click', (e) => testAlert(e));
+  }
+
+  if (button.getAttribute('id') === 'equal') {
+    button.addEventListener('click', (e) => testAlert(e));
+  }
+
+  if (button.getAttribute('id') === 'clear') {
+    button.addEventListener('click', (e) => testAlert(e));
+  }
+
+  if (button.getAttribute('id') === 'backspace') {
+    button.addEventListener('click', (e) => testAlert(e));
+  }
+}
+
+function testAlert(e) {
+  let button = e.target;
+  alert('You clicked button ' + button.getAttribute('id'));
+}
