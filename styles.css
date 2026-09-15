@@ -49,7 +49,7 @@ html {
 }
 
 .history, .empty {
-    font-size: large;
+    font-size: 20px;
     text-align: right;
     margin: 4vh 30px;
     flex-grow: 1;
@@ -156,4 +156,12 @@ a:hover {
 
 .pressed {
     color: #f6940a;
+}
+
+#clearHistory {
+    font-size: 20px;
+    color: #f7f7f7;
+    background: linear-gradient(145deg, #6b6b6b, #404040);
+    box-shadow:  3px 3px 10px #e2e0e0,
+                -3px -3px 10px #c2c1c1;
 }
