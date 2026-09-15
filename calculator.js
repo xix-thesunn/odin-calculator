@@ -21,8 +21,6 @@ for (button of buttons) {
   if ('vibrate' in navigator) {
     navigator.vibrate(40);
   }
-
-  console.log(expression.join(''))
 });
 }
 
