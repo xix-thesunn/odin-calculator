@@ -185,7 +185,8 @@ function clearAll() {
 };
 
 function backspaceFunc() {
-  if (display.textContent.length <= 1 || display.textContent.length <= 2 && Number(display.textContent) < 0) {
+  let input = display.textContent;
+  if (input.length <= 1 || input.length <= 2 && Number(input) < 0 || input === 'Error') {
     display.textContent = '0';
   } else {
   display.textContent = display.textContent.slice(0, -1);

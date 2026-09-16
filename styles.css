@@ -5,6 +5,11 @@
 html {
     background: linear-gradient(145deg, #deddda, #c7c5c1);
     min-height: 100%;
+    display: flex;
+}
+
+body {
+    margin: auto;
 }
 
 .workspace {
@@ -45,15 +50,17 @@ html {
     min-width: 25em;
     max-width: 25em;
 
+    max-height: 573px;
     flex-grow: 2;
 }
 
 .history, .empty {
     font-size: 20px;
     text-align: right;
-    margin: 4vh 30px;
+    margin: 3vh 30px;
     flex-grow: 1;
     width: 100%;
+    min-width: 8em;
 }
 
 @media (max-width: 45em) {
@@ -87,6 +94,10 @@ html {
     margin: 20px 10px;
     color: #f7f7f7;
     text-align: right;
+
+    max-width: 380px;
+    max-height: 98px;
+    overflow: hidden;
 }
 
 button {
